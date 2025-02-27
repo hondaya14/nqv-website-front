@@ -1,33 +1,35 @@
-import type {Metadata} from "next";
-import "./globals.css";
-import {Shippori_Mincho_B1} from "next/font/google";
+import './globals.css';
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import { ThemeProvider } from "@/src/components/theme-provider";
 
-const notojp = Shippori_Mincho_B1({
-    weight: ["400", "500"],
-    subsets: ["latin"],
-    display: "swap",
-});
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-    title: "Nqv",
-    description: "Nqv",
+  title: 'NQV | hondaya',
+  description: 'Personal website showcasing my portfolio, experience, and tech blog',
 };
 
 export default function RootLayout({
-                                       children,
-                                   }: Readonly<{
-    children: React.ReactNode;
-}>) {
-    return (
-        <html lang="en">
-        <head>
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2516886759191822" crossOrigin="anonymous"></script>
-            </head>
-        <body className={notojp.className}
-            //className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2516886759191822" crossOrigin="anonymous"></script>
+      </head>
+      <body className={inter.className}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
         >
-        {children}
-        </body>
-        </html>
-    );
+          {children}
+        </ThemeProvider>
+      </body>
+    </html>
+  );
 }
