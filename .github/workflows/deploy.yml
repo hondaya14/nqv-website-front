@@ -15,10 +15,13 @@ jobs:
       - name: Build And Export
         run: npm run export
 
+      - name: ls
+        run:
+          ls
       - name: Deploy
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         run: |
-          aws s3 sync --region ap-northeast-1 nqv-website-front/out s3://nqv-website-bucket-prd --delete
-          aws s3 cp --region ap-northeast-1 nqv-website-front/ads.txt s3://nqv-website-bucket-prd
+          aws s3 sync --region ap-northeast-1 ./out s3://nqv-website-bucket-prd --delete
+          aws s3 cp --region ap-northeast-1 ./ads.txt s3://nqv-website-bucket-prd
