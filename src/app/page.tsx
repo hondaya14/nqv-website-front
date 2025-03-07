@@ -5,15 +5,14 @@ import { Button } from "@/src/components/ui/button";
 import { Card, CardContent } from "@/src/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/src/components/ui/tabs";
 import { Github, Linkedin, Mail, Download, Code, Briefcase, GraduationCap, BookOpen, Package, MailIcon, PlaySquare } from "lucide-react";
-import { Mali } from "next/font/google";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col items-center justify-between">
       <SiteHeader />
       <main className="flex-1">
-        <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
+        <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10">
           <div className="container flex flex-col items-center gap-4 text-center">
             <div className="rounded-full border-4 border-primary/10 p-1">
               <img 
