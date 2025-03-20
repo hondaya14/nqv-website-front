@@ -100,7 +100,6 @@ export default function PrivacyPolicy() {
             <h2 className="text-2xl font-semibold mb-4">11. お問い合わせ先</h2>
             <p>本ポリシーに関するお問い合わせは、下記の連絡先までお願いいたします。</p>
             <div className="mt-2">
-              <p>お問い合わせ窓口：nqvno</p>
               <p>メールアドレス：nqvno14@gmail.com</p>
             </div>
           </section>
