@@ -298,7 +298,7 @@ export default function Home() {
         <div className="container flex flex-col items-center justify-between gap-4 md:h-16 md:flex-row">
           <div className="flex gap-4">
             <Link href="/privacy" className="text-sm text-muted-foreground hover:text-primary">
-              プライバシーポリシー
+              Privacy Policy
             </Link>
           </div>
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-right">

@@ -62,13 +62,13 @@ export default function PrivacyPolicy() {
             <p>本サイトでは、第三者配信事業者である Google やその他の広告ネットワークを利用して広告を配信しています。Google を含む第三者配信事業者は、ユーザーが本サイトや他のウェブサイトに過去にアクセスした情報に基づいて適切な広告を表示するために、Cookie を使用することがあります。</p>
             <ul className="list-disc pl-6 mt-2">
               <li>Google が広告 Cookie を使用することにより、ユーザーが本サイトや他のサイトにアクセスした際の情報に基づいて、Google やそのパートナーが適切な広告をユーザーに表示できます。</li>
-              <li>ユーザーは、広告設定にてパーソナライズ広告を無効にできます。また、www.aboutads.info にアクセスして、パーソナライズ広告に使用される第三者配信事業者の Cookie を無効にすることも可能です。</li>
+              <li>ユーザーは、広告設定にてパーソナライズ広告を無効にできます。また、<a href="http://www.aboutads.info/choices/">www.aboutads.info</a> にアクセスして、パーソナライズ広告に使用される第三者配信事業者の Cookie を無効にすることも可能です。</li>
             </ul>
 
             <h3 className="text-xl font-semibold mb-2 mt-4">5-3. 第三者配信事業者や広告ネットワークの利用</h3>
             <p>本サイトでは、Google 以外の第三者配信事業者や広告ネットワークの広告が掲載される場合があります。その場合、第三者配信事業者や広告ネットワークも Cookie を使用して、ユーザーが過去にアクセスしたウェブサイトの情報に基づく広告を配信することがあります。</p>
             <p className="mt-2">対象となる第三者配信事業者や広告ネットワークには、各事業者独自のプライバシーポリシーが適用されます。各事業者のプライバシーポリシーや Cookie に関する情報については、各事業者のウェブサイトをご参照ください。</p>
-            <p className="mt-2">これらのウェブサイトにアクセスすることで、パーソナライズド広告の掲載に使用される Cookie を無効にできる場合があります。または www.aboutads.info にアクセスすることで、第三者配信事業者がパーソナライズド広告の掲載に使用する Cookie を無効にすることも可能です。</p>
+            <p className="mt-2">これらのウェブサイトにアクセスすることで、パーソナライズド広告の掲載に使用される Cookie を無効にできる場合があります。または <a href="http://www.aboutads.info/choices/">www.aboutads.info</a> にアクセスすることで、第三者配信事業者がパーソナライズド広告の掲載に使用する Cookie を無効にすることも可能です。</p>
           </section>
 
           <section className="mb-8">
@@ -104,6 +104,12 @@ export default function PrivacyPolicy() {
               <p>メールアドレス：nqvno14@gmail.com</p>
             </div>
           </section>
+
+          <div className="mt-12 pt-8 border-t">
+            <p className="text-sm text-muted-foreground text-right">
+              最終更新日：2024年3月15日
+            </p>
+          </div>
         </div>
       </main>
     </div>
