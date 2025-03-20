@@ -17,7 +17,7 @@ export default function Home() {
             <div className="rounded-full border-4 border-primary/10 p-1">
               <img 
                 src="https://avatars.githubusercontent.com/u/63848441?v=4" 
-                alt="Yasuhisa Honda" 
+                alt="nqvno" 
                 className="h-32 w-32 rounded-full object-cover"
               />
             </div>
@@ -25,7 +25,7 @@ export default function Home() {
               Yasuhisa Honda
             </h2>
             <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-              I'm "junior" software engineer.
+              @honday
             </p>
             <div className="flex gap-4 mt-4">
               <Button variant="ghost" size="icon" asChild>
@@ -296,6 +296,11 @@ export default function Home() {
       </main>
       <footer className="border-t py-6 md:py-0">
         <div className="container flex flex-col items-center justify-between gap-4 md:h-16 md:flex-row">
+          <div className="flex gap-4">
+            <Link href="/privacy" className="text-sm text-muted-foreground hover:text-primary">
+              プライバシーポリシー
+            </Link>
+          </div>
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-right">
             © 2025 Yasuhisa honda. All rights reserved.
           </p>
