@@ -4,7 +4,7 @@ import me from "../../public/me.png"
 
 export default function ResumePage() {
     return (
-        <div className="min-h-screen bg-[#f9f6f2] text-[#2a2a2a] font-light flex flex-col">
+        <div className="min-h-screen bg-[#f9f6f2] text-[#2a2a2a] font-light flex flex-wrap flex-col">
             {/* Main Content */}
             <main className="flex-1 max-w-2xl mx-auto px-8 py-20 flex flex-col justify-center">
                 {/* Name */}
@@ -15,7 +15,7 @@ export default function ResumePage() {
                     Yasuhisa Honda
                 </p>
 
-                <Image className="mb-24 leading-relaxed max-w-9/10" src={me} alt="me" />
+                <Image className="mb-24 m-auto" src={me} alt="me" />
 
                 {/* Experience - Simplified */}
                 <div className="mb-24 space-y-12">
