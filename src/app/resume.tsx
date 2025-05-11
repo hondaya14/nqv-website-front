@@ -15,7 +15,7 @@ export default function ResumePage() {
                     Yasuhisa Honda
                 </p>
 
-                <Image className="mb-24 leading-relaxed max-w-lg" src={me} alt="me" />
+                <Image className="mb-24 leading-relaxed max-w-9/10" src={me} alt="me" />
 
                 {/* Experience - Simplified */}
                 <div className="mb-24 space-y-12">
