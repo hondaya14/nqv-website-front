@@ -1,4 +1,6 @@
 import Link from "next/link"
+import Image from "next/image"
+import me from "../../public/me.png"
 
 export default function ResumePage() {
     return (
@@ -13,9 +15,7 @@ export default function ResumePage() {
                     Yasuhisa Honda
                 </p>
 
-                <p className="mb-24 leading-relaxed max-w-lg">
-                    photo
-                </p>
+                <Image className="mb-24 leading-relaxed max-w-lg" src={me} alt="me" />
 
                 {/* Experience - Simplified */}
                 <div className="mb-24 space-y-12">
@@ -140,12 +140,12 @@ export default function ResumePage() {
                     "The silver bullet is that 'There is no silver bullet'."
                 </blockquote>
 
-            </main>
+            </main >
 
             {/* Footer */}
-            <footer className="p-8 text-xs text-center text-[#777]">
+            < footer className="p-8 text-xs text-center text-[#777]" >
                 <p>Yasuhisa Honda</p>
-            </footer>
-        </div>
+            </footer >
+        </div >
     )
 }
