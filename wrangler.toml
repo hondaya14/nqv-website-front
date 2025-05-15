@@ -1,5 +1,5 @@
 name = "resume"
-main = "out/index.html"
+main = "src/app/layout.tsx"
 compatibility_date = "2025-05-15"
 
 [site]
