@@ -1,7 +1,6 @@
-{
-    "name": "resume",
-    "compatibility_date": "2025-05-15",
-	    "assets": {
-	        "directory": "./out"
-        }
-}
+name = "resume"
+compatibility_date = "2025-05-15"
+
+[site]
+bucket = "./out"
+entry-point = "workers-site"
